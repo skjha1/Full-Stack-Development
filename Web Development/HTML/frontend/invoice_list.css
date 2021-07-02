@@ -1,0 +1,176 @@
+#outer_frame          
+{
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 930px;
+    background: transparent radial-gradient(closest-side at 50% 50%, #58687E 0%, #39495E 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+
+
+#abx_text
+{
+  
+    padding-top: 5px;
+    padding-left: 35px;
+    float: left;
+}
+
+#logo
+{
+    padding-top: 5px;
+    float: left;
+    padding-left: 490px;
+}
+
+#invoice_list
+{
+    padding-left: 40px;
+    padding-top: 55px;   
+    text-align: left;
+    color: white;
+    font-size: x-large;
+}
+
+#inner_back
+{
+    margin-left: 35px;
+    padding-left: 25px;
+    height: 825px;
+    width:1785px;
+    background: #273D49CC;
+}
+
+.bttn
+{
+    float: right;
+    border-color: white;
+    
+    margin-top: 30px;
+    color: white;
+    padding: 11px;
+    border-radius: 10px;
+  
+    background-color: #273D49CC;
+}
+
+
+#search_img            /* id attribute for search image*/
+{
+    width: 42px;
+    float: right;
+    margin-top: 30px;
+    margin-right: 2px;
+}
+
+#add {
+top: 190px;
+left: 1126px;
+width: 99px;
+height: 45px;
+margin-top: 10px;
+margin-left: 900px;
+display: block
+border: 1px solid #97A1A9;
+background: #273D49CC 0% 0% no-repeat padding-box;
+color: #97A1A9;
+border-radius: 10px;
+opacity: 1;
+    }
+
+#add:hover {
+    border: 1px solid #14AFF1;
+}
+
+#edit{
+top: 191px;
+left: 1255px;
+width: 102px;
+height: 45px;
+margin-left: 25px;
+display: block
+border: 1px solid #97A1A9;
+background: #273D49CC 0% 0% no-repeat padding-box;
+color: #97A1A9;
+border-radius: 10px;
+
+opacity: 1;
+}
+
+#edit:hover {
+    border: 1px solid #14AFF1;
+}
+
+#del{
+top: 191px;
+left: 1377px;
+width: 123px;
+height: 45px;
+margin-left: 25px;
+display: block
+border: 1px solid #97A1A9;
+background: #273D49CC 0% 0% no-repeat padding-box;
+color: #97A1A9;
+border-radius: 10px;
+opacity: 1;
+}
+
+#del:hover {
+    border: 1px solid #14AFF1;
+}
+
+
+#search{
+top: 191px;
+
+left: 152px;
+width: 340px;
+height: 45px;
+padding-left: 15px;
+margin-left: 20px;
+margin-top: 20px;
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+color: #97A1A9;
+border-radius: 10px;
+opacity: 1;
+
+}
+
+#button_ri8
+{
+    margin-right: 50px;
+}
+
+#cust_info
+{
+    padding-top: 125px;
+}
+
+th
+{
+    
+    
+    text-align: left;
+    font: normal normal normal 18px/21px Ubuntu;
+    letter-spacing: 0px;
+    color: #97A1A9;
+    opacity: 1;
+   
+    padding-right: 118px;
+}
+
+td
+{
+    
+    color: white;
+}
+tr:nth-child(even) {            /*Picking every 2nd child from td row to darken its background*/
+    background: #283A46 0% 0% no-repeat padding-box;
+border-radius: 4px;
+opacity: 1;
+  }
+
+
