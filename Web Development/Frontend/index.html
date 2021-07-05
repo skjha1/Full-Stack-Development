@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel = "stylesheet" type = "text/css" href = "index_style.css"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Frontend</title>
+</head>
+<body>
+	<div class = "main-layout">
+		<img id = "abc-logo" src = "images/Group 20399.svg" >
+		<img id = "high-logo" src = "images/logo.svg">
+		<div id = "list-container">Invoice List </div>
+		<div class = "list-layout">
+			<div class = "button-container">
+				<div class = "buttons">
+					  <button id = "add-btn">
+						  <img src = "images/add_but.svg">
+						  Add
+					  </button>
+					  <button id = "edit-btn">
+						<img src = "images/edit_but.svg">
+						Edit
+					  </button>
+					  <button id = "delete-btn">
+						<img src = "images/del_but.svg" id = "delete_img">
+						Delete
+					  </button>
+                      <input id = "search-bar" type ="text" placeholder = "Enter invoice No:">	
+				</div>
+			</div>
+			<div class = "table-layout">
+				<table id="table_cust_info" cellpadding=12>
+					<thead>
+						<tr id = "table-head-1">
+							<td><input type="checkbox" name="select" onclick = "highlight_all();"></td>
+							<th>Customer Name</th>
+							<th>Customer #</th>
+							<th>Invoice #</th>
+							<th>Invoice Amount</th>
+							<th>Due Date</th>
+							<th>Predicted Payment Date</th>
+							<th>Notes</th>
+						</tr>
+					</thead>
+                    <!--1-->
+                    <tr id = "1">
+                        <td><input type="checkbox" name="select" onclick = "highlight('1');"></td>
+                        <td>Monica Gellar</td>
+                        <td>2523532</td>
+                        <td>57635634655</td>
+                        <td>122.87K</td>
+                        <td>23-Jan-2021</td>
+                        <td>-</td>
+                        <td>iwefggahhggsekhikewfhkkkwebbkfiuugbw</td>
+                    </tr>
+
+                    <!--2-->
+                    <tr id = "2" >
+                        <td><input type="checkbox" name="select" onclick = "highlight('2');"></td>
+                        <td>Rachel Green</td>
+                        <td>3523312</td>
+                        <td>54723243652</td>
+                        <td>1.87K</td>
+                        <td>15-Jan-2021</td>
+                        <td>-</td>
+                        <td>iwefggahfiuugbw</td>
+                    </tr>
+
+                    <!--3-->
+                    <tr id = "3">
+                        <td><input type="checkbox" name="select" onclick = "highlight('3');"></td>
+                        <td>Gunther</td>
+                        <td>988757</td>
+                        <td>76531467365</td>
+                        <td>22.87K</td>
+                        <td>03-Jan-2021</td>
+                        <td></td>
+                        <td>iwefggahfiuugbw</td>
+                    </tr>
+
+                    <!--4-->
+                    <tr id = "4">
+                        <td><input type="checkbox" name="select" onclick = "highlight('4');"></td>
+                        <td>Regina Phillange</td>
+                        <td>4523426</td>
+                        <td>57635634655</td>
+                        <td>55.70K</td>
+                        <td style="color: indianred;">22-Mar-2021</td>
+                        <td>31-May-2021</td>
+                        <td>iwefggahfiuugbw</td>
+                    </tr>
+
+                    <!--5-->
+                    <tr id = "5">
+                        <td><input type="checkbox" name="select" onclick = "highlight('5');"></td>
+                        <td>Ken Adams</td>
+                        <td>2523532</td>
+                        <td>73457346735</td>
+                        <td>122.87K</td>
+                        <td>23-Jan-2021</td>
+                        <td>-</td>
+                        <td>iwefggahfiuugbw</td>
+                    </tr>
+
+                    <!--6-->
+                    <tr id = "6">
+                        <td><input type="checkbox" name="select" onclick = "highlight('6');"></td>
+                        <td>Joey Tribbiani</td>
+                        <td>352312</td>
+                        <td>54723243652</td>
+                        <td>1.87K</td>
+                        <td>05-Jan-2021</td>
+                        <td>-</td>
+                        <td>iwefggahfiuugbikdewfibw</td>
+                    </tr>
+                    <!--7-->
+                    <tr id = '7'>
+                        <td><input type="checkbox" name="select" onclick = "highlight('7');"></td>
+                        <td>Mr. Heckles</td>
+                        <td>2523532</td>
+                        <td>57635634655</td>
+                        <td>122.87K</td>
+                        <td>23-Jan-2021</td>
+                        <td>-</td>
+                        <td>iwefggahfiuugbw</td>
+                    </tr>
+                    <!--8-->
+                    <tr id = "8">
+                        <td><input type="checkbox" name="select" onclick = "highlight('8');"></td>
+                        <td>Mike Hannigan</td>
+                        <td>3523312</td>
+                        <td>54723243652</td>
+                        <td>1.87K</td>
+                        <td style="color: indianred;">15-Jan-2021</td>
+                        <td>-</td>
+                        <td>iwefggahfiuugbw</td>
+                    </tr>
+
+                    <!--9-->
+                    <tr id = "9">
+                        <td><input type="checkbox" name="select" onclick = "highlight('9');"></td>
+                        <td>Ursula</td>
+                        <td>988757</td>
+                        <td>76531467365</td>
+                        <td>22.87K</td>
+                        <td>03-Jan-2021</td>
+                        <td></td>
+                        <td>iwefggahfiuugbw</td>
+                    </tr>
+                    <!--10-->
+                    <tr id = "10">
+                        <td><input type="checkbox" name="select" onclick = "highlight('10');"></td>
+                        <td>Amy</td>
+                        <td>4523426</td>
+                        <td>57635634655</td>
+                        <td>55.70K</td>
+                        <td>22-mar-2021</td>
+                        <td>31-May-2021</td>
+                        <td>iwefggahfiuugbw</td>
+                    </tr>
+                </table>
+			</div>
+		</div>
+	</div>
+    <div class="overlay hidden"></div>
+	<div class = "edit-form hidden">
+		<div id = "edit-head">
+            <p id = "edit-head-text">Edit Form</p>
+            <button id = "edit-cross"></button>
+        </div>
+		<div class = "edit-body">
+            <div class = "edit-amount">
+                <p id = "invoice-amount" >Invoice Amount</p>
+                <input id = "edit-amount-input" type = "text"/>
+            </div>
+            <div class = "edit-notes">
+                <p id = "notes">Notes</p>
+                <input id = "edit-notes-input" type = "text"/>
+            </div>
+        </div>
+		<div class = "edit-foot">
+            <button id = "edit-cancel">Cancel</button>
+            <div class = "edit-foot-right">
+                <button id = "edit-reset">Reset</button>
+                <button id = "edit-save">Save</button>
+            </div>
+        </div>
+	</div>
+    <div class = "delete-form hidden">
+        <div class = "delete-head">
+            <p id = "delete-head-text">Delete record(s)?</p>
+            <button id = "delete-cross"></button>
+        </div>
+        <div class = "delete-body">
+            <p id = "delete-info">
+                You'll lose your record(s) after this action. We can't recover them once you delete.
+                <br>
+                <br>
+                <br>
+                Are you sure you want to <span style = "color : #FF5E5E">permanently delete</span> them?
+            </p>
+        </div>
+        <div class = "delete-foot">
+            <button id = "delete-cancel">Cancel</button>
+            <button id = "delete-delete">Delete</button>
+        </div>
+    </div>
+    <div class = "add-form hidden">
+        <div class = "add-head">
+            <p id = "add-head-text">Add Invoice</p>
+            <button id = "add-cross"></button>
+        </div>
+        <div class = "add-body">
+            <div class = "add-left">
+                <div class = "add-cust-name">
+                    <label id = "add-cust-name-label" for = "cust-name">Customer Name <span style = "color : #FF5B5B">*</span></label>
+                    <input id = "add-cust-name-input" style="margin-left:1.2vw" type = "text" name = "cust-name"/>
+                </div>
+                <div class = "add-cust-no">
+                    <label id = "add-cust-no-label" for = "cust-no">Customer No. <span style = "color : #FF5B5B">*</span></label>
+                    <input id = "add-cust-no-input" type = "text" style="margin-left:2.5vw" name = "cust-no"/>
+                </div>
+                <div class = "add-invoice-no">
+                    <label id = "add-invoice-no-label" for = "invoice-no">Invoice No. <span style = "color : #FF5B5B">*</span></label>
+                    <input id = "add-invoice-no-input" type = "text" style="margin-left:3.95vw" name = "invoice-no"/>
+                </div>
+                <div class = "add-invoice-amt">
+                    <label id = "add-invoice-amt-labels" for = "amt">Invoice Amount <span style = "color : #FF5B5B">*</span></label>
+                    <input id = "add-invoice-amt-input" type = "text" style="margin-left:1.5vw" name = "amt"/>
+                </div>
+            </div>
+            <div class = "add-right">
+                <div class = "add-due">
+                    <label id = "add-calender-label" for = "due">Date <span style = "color : #FF5B5B">*</span></label>
+                    <input id = "add-calender-input" type="date" style="margin-left:1.0vw" name = "due">
+                </div>
+                <div class = "add-notes">
+                    <label id = "add-notes-label" for = "notes-add">Notes</label>
+                    <input id = "add-notes-input" type = "text" style="margin-left:1.2vw" name = "notes-add"/>
+                </div>
+            </div>
+        </div>
+        <div class = "add-foot">
+            <button id = "add-cancel">Cancel</button>
+            <div class = "add-foot-right">
+                <button id = "add-reset">Clear</button>
+                <button id = "add-save">Add</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+	function highlight(id)
+	{
+		object = document.getElementById(id).style.backgroundColor;
+		id_num = Number(id);
+
+		if (object == "rgb(42, 83, 104)")
+		{
+			if(id_num % 2 == 0)
+				document.getElementById(id).style.backgroundColor = "#283A46";
+			else
+				document.getElementById(id).style.backgroundColor = "#273D49CC"
+		} else
+			document.getElementById(id).style.backgroundColor = "#2A5368";
+	}
+	function highlight_all()
+	{
+		for (let id = 1; id <= 10; id++)
+		{
+			let x = document.getElementById(id);
+			var checkBoxes = x.getElementsByTagName("INPUT");
+			(checkBoxes[0].checked)? checkBoxes[0].checked = false : checkBoxes[0].checked = true;			
+			highlight(id);
+		}
+	}
+</script>
+<script src ="script.js"></script>
+</html>

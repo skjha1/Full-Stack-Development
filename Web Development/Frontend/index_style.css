@@ -1,0 +1,576 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+
+.main-layout 
+{
+	background : #58687E;
+	width : 100vw;  /*1920*/
+	height : 100vh; /*930*/
+}
+.overlay 
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(3px);
+	z-index: 5;
+}
+.hidden
+{
+	display: none;
+}
+
+#abc-logo 
+{	
+	position: relative;
+	top: 2.53vh;
+	left: 1.56vw;
+	width: 15.05vw;
+	height: 5.59vh;
+	opacity: 1;
+}
+
+#high-logo 
+{
+	position : relative;
+	top: 2.3vh;
+	left: 27.5vw;
+	width: 12.2vw;
+	height: 5.37vh;	
+	opacity: 1;
+}
+
+#list-container
+{
+	position : relative;
+	top: 3.7vh;
+	left: 1.56vw;
+	width: 7.34vw;
+	height: 5vh;
+	padding-bottom: 2.1vh;
+	padding-left: 0.10vw;
+	text-align: left;
+	font: normal normal normal 1.40vw/30px Ubuntu;
+	color: #FFFFFF;
+	opacity: 1;
+	font-family: Ubuntu;
+
+}
+.list-layout
+{	
+	position : relative;
+	top: 4.5vh;
+	left: 1.04vw;
+	width: 96.87vw; /*1860*/
+	height: 75.49vh; /*739*/
+	background: #273D49CC 0% 0% no-repeat padding-box;
+	border-radius: 10px;
+	opacity: 1;
+	overflow-y: auto;
+}
+
+.button-container
+{
+	position :relative;
+	padding : 1.3vh 1.35vw;
+	top: 2.02vh;
+	left: 0.53vw;
+	width: 100vw;
+	height: 9.6vh;
+	opacity: 1;
+	align-items: left;
+}
+
+.buttons
+{
+	position : relative;
+	left: 58.5vw;
+	width : 98.6vh;
+	height : 45px;
+	opacity: 1;
+}
+
+#add-btn,#edit-btn,#delete-btn
+{
+	border: 1px solid #356680;
+	border-radius: 10px;
+	opacity: 1;
+	width: 6vw;
+	height: 6vh;
+	margin-right: 8px;
+	background: #283A46 0% 0% no-repeat padding-box;
+	
+	font: normal normal normal 20dp/24dp Ubuntu;
+	letter-spacing: 0dp;
+	color: #FFFFFF;
+	opacity: 1;
+	font-size:medium;
+}
+#add-btn img,#edit-btn img,#delete-btn img
+{
+	float: left;
+	margin-left : 0.35vw;
+}
+#delete-btn img
+{
+	margin-top : 1vh;
+}
+
+#search-bar
+{
+	width: 15vw;
+	height: 5.08vh;
+	background: #283A46 0% 0% no-repeat padding-box;
+	border: 1px solid #356680;
+	border-radius: 10px;
+	opacity: 1;
+
+	font: normal normal normal 18px/21px Ubuntu;
+	font-family: Ubuntu;
+	color: #97A1A9;
+	font-family: Ubuntu;
+}
+
+table,th,td
+{
+	border-collapse: collapse;
+	font-family: Ubuntu;
+	color: #FFFFFF;
+	text-align: left;
+
+}
+#table-cust-info
+{
+	overflow-y: auto;
+}
+table 
+{
+	width: 93vw;
+	margin-left: 2vw;
+}
+th
+{
+	height: 3vh;
+	border-bottom: 1px solid #283A46;
+}
+tr:nth-child(even) 
+{
+	background-color: #283A46;
+}
+tr:nth-child(odd) 
+{
+	background-color: #273D49CC;
+}
+
+
+
+/*EDIT FORM CSS STARTS HERE*/
+.edit-form
+{
+	position: absolute;
+	top: 22.5vh;
+	left: 35.8vw;
+	width: 32.28vw;
+	height: 54.9vh;
+	background: #2A3E4C 0% 0% no-repeat padding-box;
+	box-shadow: 0px 8px 24px #00000029;
+	border-radius: 6px;
+	opacity: 1;
+	z-index : 6;
+}
+#edit-head
+{
+	display: flex;
+	top: 22.5vh;
+	left: 35.8;
+	width: 32.28vw;
+	height: 8.6vh;
+	border-bottom: 2.5px solid #283A46;
+	justify-content: space-between;
+}
+#edit-head-text
+{
+	text-align: left;
+	font: normal normal normal 1.45vw/1.6vw Ubuntu;
+	font-family: Ubuntu;
+	color: #FFFFFF;
+	text-transform: capitalize;
+	opacity: 1;
+	padding-left :1.56vw;
+	width : 7.55vw;
+	margin-right: 0.26vw;
+}
+#edit-cross
+{
+	margin : 2.56vh;
+	background: transparent url('images/baseline-close-24px.svg') no-repeat;
+	border: 1px solid #273D49CC;
+	color: #FFFFFF;
+	width : 2.5vw;
+}
+.edit-body	
+{
+	top: 35.5vh;
+	left: 37.4vw;
+	width: 32.1vw;
+	height: 37.3vh;
+	border-bottom: 2.5px solid #283A46;
+}
+
+.edit-amount
+{	
+	padding-left : 3vw;
+	padding-top : 1.2vh;
+	height : 6.8vh;
+	width : 25.1vw;
+}
+
+.edit-notes
+{
+	padding-left : 3vw;
+	padding-top : 1.2vh;
+	width : 25.1vw;
+	height : 20.5vh;
+}
+
+#invoice-amount
+{
+	text-align: left;
+	font: normal normal normal 1.04vw/1.25vw Ubuntu;
+	font-family: Ubuntu;
+	letter-spacing: 0.19px;
+	color: #97A1A9;
+	opacity: 1;	
+	width: 7.6vw;
+}
+#edit-amount-input
+{
+	position: absolute;
+	top: 10.49vh;
+	left: 13vw;
+	width: 16.6vw;
+	height: 4.83vh;
+	background: #283A46 0% 0% no-repeat padding-box;
+	border: 1px solid #356680;
+	border-radius: 10px;
+	opacity: 1;	
+}
+
+
+#notes
+{
+	text-align: left;
+	font: normal normal normal 1.04vw/1.25vw Ubuntu;
+	font-family: Ubuntu;
+	letter-spacing: 0.19px;
+	color: #97A1A9;
+	opacity: 1;	
+	width: 7.6vw;
+	padding-top: 2vh;
+}
+
+#edit-notes-input
+{
+	position: absolute;
+	top: 20.49vh;
+	left: 13vw;
+	width: 16.6vw;
+	height: 20.83vh;
+	background: #283A46 0% 0% no-repeat padding-box;
+	border: 1px solid #356680;
+	border-radius: 10px;
+	opacity: 1;	
+}
+
+.edit-foot
+{
+	display: flex;
+	height : 7.20vh;
+	justify-content: space-between;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	align-items : center;
+}
+#edit-cancel,#edit-reset,#edit-save
+{
+	width: 4.7vw;
+	height: 4.8vh;
+	background: #2A3E4C;
+	font: normal normal normal 1.04vw/1.25vw Ubuntu;
+	letter-spacing: 0px;
+	color : #FFFFFF;
+	border: 1px solid #356680;
+	font-family: Ubuntu;
+	border-radius: 10px;
+	opacity: 1;
+}
+#edit-reset
+{
+	margin-right : 2.5vw;
+}
+/*EDIT FORM CSS ENDS*/
+
+.delete-form
+{
+	position: absolute;
+	top: 31.5vh;
+	left: 33.8vw;
+	width: 32.28vw;
+	height: 36.95vh;
+	background: #2A3E4C 0% 0% no-repeat padding-box;
+	box-shadow: 0px 8px 24px #00000029;
+	border-radius: 6px;
+	opacity: 1;
+	z-index : 6;
+}
+
+.delete-head
+{
+	display: flex;
+	top: 22.5vh;
+	left: 35.8;
+	width: 32.28vw;
+	height: 10.6vh;
+	border-bottom: 2.5px solid #283A46;
+	justify-content: space-between;
+}
+#delete-head-text
+{
+	text-align: left;
+	font: normal normal normal 1.25vw/1.6vw Ubuntu;
+	font-family: Ubuntu;
+	color: #FFFFFF;
+	text-transform: capitalize;
+	opacity: 1;
+	padding-left :1.56vw;
+	padding-top: 1.2vh;
+	width : 10.55vw;
+	margin-right: 2vw;
+}
+#delete-cross
+{
+	margin : 3.00vh;
+	background: transparent url('images/baseline-close-24px.svg') no-repeat;
+	border: 1px solid #273D49CC;
+	color: #FFFFFF;
+	width : 2.5vw;
+}
+
+.delete-body	
+{
+	top: 35.5vh;
+	left: 37.4vw;
+	width: 32.1vw;
+	height: 16.3vh;
+	border-bottom: 2.5px solid #283A46;
+}
+#delete-info
+{
+	text-align: left;
+	font: normal normal normal 0.95vw/1.25vw Ubuntu;
+	font-family: Ubuntu;
+	letter-spacing: 0.19px;
+	color: #FFFFFF;
+	opacity: 1;	
+	width: 25vw;
+	padding-left: 2vw;
+}
+
+#delete_img
+{
+	top: 213px;
+left: 1395px;
+width: 14px;
+height: 2px;
+background: #F4F8FA 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+
+
+.delete-foot
+{
+	display: flex;
+	height : 7.20vh;
+	justify-content: flex-end;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	align-items : center;
+}
+
+#delete-cancel
+{
+	margin-right : 2.5vw;
+}
+
+#delete-cancel,#delete-delete
+{
+	width: 4.7vw;
+	height: 3.8vh;
+	background: #2A3E4C;
+	font: normal normal normal 0.85vw/1.02vw Ubuntu;
+	letter-spacing: 0px;
+	color : #FFFFFF;
+	border: 1px solid #356680;
+	font-family: Ubuntu;
+	border-radius: 10px;
+	opacity: 1;
+}
+
+/*add from css starts here*/
+.add-form
+{
+	position: absolute;
+	top: 22.5vh;
+	left: 21.1vw;
+	width: 57.6vw;
+	height: 54.9vh;
+	background: #2A3E4C 0% 0% no-repeat padding-box;
+	box-shadow: 0px 8px 24px #00000029;
+	border-radius: 6px;
+	opacity: 1;
+	z-index : 6;
+}
+
+.add-head
+{
+	display: flex;
+	top: 22.5vh;
+	left: 35.8vw;
+	width: 60.38vw;
+	height: 9.6vh;
+	border-bottom: 2.5px solid #283A46;
+	justify-content: space-between;
+}
+
+#add-head-text
+{
+	padding-left: 2vw;	
+	text-align: left;
+	font: normal normal normal 1.45vw/3.44vw Ubuntu;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	text-transform: capitalize;
+	opacity: 1;
+}
+#add-cross
+{
+	background: transparent url('images/baseline-close-24px.svg') no-repeat;
+	border: 1px solid #273D49CC;
+	color: #FFFFFF;
+	padding: 2vw;
+	margin : 2vw ;
+}
+
+.add-body
+{
+	display: flex;
+	top: 30.5vh;
+	left: 34.4vw;
+	width: 57.1vw;
+	height: 33vh;
+	border-bottom: 2.5px solid #283A46;
+	justify-content: center;
+	padding-top : 3vh;
+}
+.add-left
+{
+	margin-right: 8vw;
+	display: flex;
+	flex-direction: column;
+
+}
+.add-right
+{
+	margin-right : 2vw;
+	display: flex;
+	flex-direction: column;
+}
+
+#add-cust-name-input,#add-cust-no-input,#add-invoice-no-input,#add-invoice-amt-input
+{
+	width: 10vw;
+	height: 4.5vh;
+	background: #283A46 0% 0% no-repeat padding-box;
+	border: 1px solid #356680;
+	border-radius: 10px;
+	opacity: 1;
+	margin-bottom: 3vh;
+}
+
+#add-cust-name-label,#add-cust-no-label,#add-invoice-no-label,#add-invoice-amt-labels,#add-calender-label,#add-notes-label
+{
+	text-align: left;
+	font: normal normal normal 20px/24px Ubuntu;
+	color: #FFFFFF;
+	letter-spacing: 0.19px;
+	opacity: 1;
+}
+
+#add-notes-input
+{
+	background: #283A46 0% 0% no-repeat padding-box;
+	border: 1px solid #356680;
+	border-radius: 10px;
+	opacity: 1;
+
+	width: 12.5vw;
+	height: 20vh;
+}
+
+#add-calender-input
+{
+	background: #283A46 0% 0% no-repeat padding-box;
+	border: 1px solid #356680;
+	border-radius: 10px;
+	opacity: 1;
+	height: 4.5vh;
+	width: 12.5vw;
+	font: normal normal normal 0.95vw/1.5vw Ubuntu;
+	color: #FFFFFF;
+	margin-bottom: 3vh;
+	padding : 5px;
+}
+.add-foot
+{
+	display: flex;
+	height : 7.20vh;
+	justify-content: space-between;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	align-items : center;
+}
+
+#add-cancel,#add-reset,#add-save
+{
+	width: 4.7vw;
+	height: 4.8vh;
+	background: #2A3E4C;
+	font: normal normal normal 1.04vw/1.25vw Ubuntu;
+	letter-spacing: 0px;
+	color : #FFFFFF;
+	border: 1px solid #356680;
+	font-family: Ubuntu;
+	border-radius: 10px;
+	opacity: 1;
+}
+#add-reset
+{
+	margin-right : 2.5vw;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator 
+{
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url("images/calendar_today-24px.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}
